@@ -1,0 +1,86 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  text-shadow: 0 2px 0 #eee;
+  text-align: center;
+}
+
+h1 {
+  padding: 100px 0 20px;
+  font-size: 52pt;
+  font-weight: bold;
+  color: #444;
+}
+
+h2 {
+  font-size: 17pt;
+  font-weight: 300;
+  color: #555;
+  padding: 0 0 22px;
+  border-bottom: 2px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  min-width: 340px;
+  max-width: 480px;
+  height: 100%;
+  min-height: 650px;
+  background: url("images/headshot.png") bottom center / 435px 330px no-repeat;
+}
+
+ul.services {
+  margin: 20px 0;
+  text-align: center;
+}
+
+ul.services li {
+  display: inline-block;
+  padding: 5px;
+}
+
+ul.services li img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.1s ease;
+  opacity: 0.6;
+  -webkit-filter: drop-shadow(0 1px 0 rgba(0,0,0,0.3));
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,0.3));
+}
+
+ul.services li img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  
+  h1 {
+    padding: 30px 0 20px;
+    font-size: 42pt;
+  }
+  
+  h2 {
+    font-size: 16pt;
+  }
+  
+  div.container {
+    min-height: 550px;
+    max-width: 100%;
+  }
+}
